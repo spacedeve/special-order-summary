@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.hero {
+  max-width: 100%;
+}
+
+.hero__inner {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.hero__img {
+  max-width: 100%;
+  margin-bottom: 50px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.hero__title {
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.hero__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 300px;
+  opacity: .8;
+  margin-bottom: 40px;
+}
+
+.hero__plan {
+  width: 300px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero__plan-price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.hero__plan-price span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: .8;
+}
+
+.hero__plan-link {
+  color: hsl(245, 75%, 52%);
+  margin-left: auto;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.hero__plan-link:hover {
+  color: #8279d3;
+  text-decoration: none;
+}
+
+.top-link {
+  background-color: #382ae1;
+  color: #fff;
+  padding: 12px 100px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.top-link:hover {
+  background-color: #766cf1;
+}
+
+.bottom-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  opacity: .6;
+  margin-bottom: 40px;
+}
+
+.bottom-link:hover {
+  opacity: 1;
+}
+
+@media (max-width: 375px) {
+  .hero__img {
+    margin-bottom: 36px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .hero__text {
+    max-width: 274px;
+  }
+
+  .hero__plan {
+    padding-right: 20px;
+    padding-left: 20px;
+    gap: 15px;
+  }
+
+  .top-link {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
